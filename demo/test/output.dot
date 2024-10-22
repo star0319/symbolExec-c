@@ -1,0 +1,529 @@
+strict digraph "" {
+	"Node NOP: 0x8a
+<CsInsn 0x1060 : endbr64 >
+<CsInsn 0x1064 : xor ebp, ebp>
+<CsInsn 0x1066 : mov r9, rdx>
+<CsInsn 0x1069 : pop rsi>
+<\
+CsInsn 0x106a : mov rdx, rsp>
+<CsInsn 0x106d : and rsp, 0xfffffffffffffff0>
+<CsInsn 0x1071 : push rax>
+<CsInsn 0x1072 : push rsp>
+<\
+CsInsn 0x1073 : lea r8, [rip + 0x1d6]>
+<CsInsn 0x107a : lea rcx, [rip + 0x15f]>
+<CsInsn 0x1081 : lea rdi, [rip + 0x12d]>
+<CsInsn \
+0x1088 : call qword ptr [rip + 0x2f52]>
+<CsInsn 0x108e : hlt >
+<CsInsn 0x108f : nop >
+<CsInsn 0x1090 : lea rdi, [rip + 0x2f79]>
+<\
+CsInsn 0x1097 : lea rax, [rip + 0x2f72]>
+<CsInsn 0x109e : cmp rax, rdi>
+<CsInsn 0x10a1 : je 0x58>
+" -> "<CsInsn 0x10a3 : mov rax, qword ptr [rip + 0x2f2e]>
+<CsInsn 0x10aa : test rax, rax>
+<CsInsn 0x10ad : je 0x58>
+";
+	"Node NOP: 0x8a
+<CsInsn 0x1060 : endbr64 >
+<CsInsn 0x1064 : xor ebp, ebp>
+<CsInsn 0x1066 : mov r9, rdx>
+<CsInsn 0x1069 : pop rsi>
+<\
+CsInsn 0x106a : mov rdx, rsp>
+<CsInsn 0x106d : and rsp, 0xfffffffffffffff0>
+<CsInsn 0x1071 : push rax>
+<CsInsn 0x1072 : push rsp>
+<\
+CsInsn 0x1073 : lea r8, [rip + 0x1d6]>
+<CsInsn 0x107a : lea rcx, [rip + 0x15f]>
+<CsInsn 0x1081 : lea rdi, [rip + 0x12d]>
+<CsInsn \
+0x1088 : call qword ptr [rip + 0x2f52]>
+<CsInsn 0x108e : hlt >
+<CsInsn 0x108f : nop >
+<CsInsn 0x1090 : lea rdi, [rip + 0x2f79]>
+<\
+CsInsn 0x1097 : lea rax, [rip + 0x2f72]>
+<CsInsn 0x109e : cmp rax, rdi>
+<CsInsn 0x10a1 : je 0x58>
+" -> "<CsInsn 0x10b8 : ret >
+<CsInsn 0x10b9 : nop dword ptr [rax]>
+";
+	"<CsInsn 0x10a3 : mov rax, qword ptr [rip + 0x2f2e]>
+<CsInsn 0x10aa : test rax, rax>
+<CsInsn 0x10ad : je 0x58>
+" -> "<CsInsn 0x10af : jmp rax>
+";
+	"<CsInsn 0x10a3 : mov rax, qword ptr [rip + 0x2f2e]>
+<CsInsn 0x10aa : test rax, rax>
+<CsInsn 0x10ad : je 0x58>
+" -> "<CsInsn 0x10b8 : ret >
+<CsInsn 0x10b9 : nop dword ptr [rax]>
+";
+	"<CsInsn 0x10b1 : nop dword ptr [rax]>
+" -> "<CsInsn 0x10b8 : ret >
+<CsInsn 0x10b9 : nop dword ptr [rax]>
+";
+	"<CsInsn 0x10b8 : ret >
+<CsInsn 0x10b9 : nop dword ptr [rax]>
+" -> "<CsInsn 0x10c0 : lea rdi, [rip + 0x2f49]>
+<CsInsn 0x10c7 : lea rsi, [rip + 0x2f42]>
+<CsInsn 0x10ce : sub rsi, rdi>
+<CsInsn 0x10d1 : \
+mov rax, rsi>
+<CsInsn 0x10d4 : shr rsi, 0x3f>
+<CsInsn 0x10d8 : sar rax, 3>
+<CsInsn 0x10dc : add rsi, rax>
+<CsInsn 0x10df : sar rsi, \
+1>
+<CsInsn 0x10e2 : je 0x98>
+";
+	"<CsInsn 0x10c0 : lea rdi, [rip + 0x2f49]>
+<CsInsn 0x10c7 : lea rsi, [rip + 0x2f42]>
+<CsInsn 0x10ce : sub rsi, rdi>
+<CsInsn 0x10d1 : \
+mov rax, rsi>
+<CsInsn 0x10d4 : shr rsi, 0x3f>
+<CsInsn 0x10d8 : sar rax, 3>
+<CsInsn 0x10dc : add rsi, rax>
+<CsInsn 0x10df : sar rsi, \
+1>
+<CsInsn 0x10e2 : je 0x98>
+" -> "<CsInsn 0x10e4 : mov rax, qword ptr [rip + 0x2f05]>
+<CsInsn 0x10eb : test rax, rax>
+<CsInsn 0x10ee : je 0x98>
+";
+	"<CsInsn 0x10c0 : lea rdi, [rip + 0x2f49]>
+<CsInsn 0x10c7 : lea rsi, [rip + 0x2f42]>
+<CsInsn 0x10ce : sub rsi, rdi>
+<CsInsn 0x10d1 : \
+mov rax, rsi>
+<CsInsn 0x10d4 : shr rsi, 0x3f>
+<CsInsn 0x10d8 : sar rax, 3>
+<CsInsn 0x10dc : add rsi, rax>
+<CsInsn 0x10df : sar rsi, \
+1>
+<CsInsn 0x10e2 : je 0x98>
+" -> "<CsInsn 0x10f8 : ret >
+<CsInsn 0x10f9 : nop dword ptr [rax]>
+<CsInsn 0x1100 : endbr64 >
+<CsInsn 0x1104 : cmp byte ptr [rip + 0x2f05], \
+0>
+<CsInsn 0x110b : jne 0xd8>
+";
+	"<CsInsn 0x10e4 : mov rax, qword ptr [rip + 0x2f05]>
+<CsInsn 0x10eb : test rax, rax>
+<CsInsn 0x10ee : je 0x98>
+" -> "<CsInsn 0x10f0 : jmp rax>
+";
+	"<CsInsn 0x10e4 : mov rax, qword ptr [rip + 0x2f05]>
+<CsInsn 0x10eb : test rax, rax>
+<CsInsn 0x10ee : je 0x98>
+" -> "<CsInsn 0x10f8 : ret >
+<CsInsn 0x10f9 : nop dword ptr [rax]>
+<CsInsn 0x1100 : endbr64 >
+<CsInsn 0x1104 : cmp byte ptr [rip + 0x2f05], \
+0>
+<CsInsn 0x110b : jne 0xd8>
+";
+	"<CsInsn 0x10f2 : nop word ptr [rax + rax]>
+" -> "<CsInsn 0x10f8 : ret >
+<CsInsn 0x10f9 : nop dword ptr [rax]>
+<CsInsn 0x1100 : endbr64 >
+<CsInsn 0x1104 : cmp byte ptr [rip + 0x2f05], \
+0>
+<CsInsn 0x110b : jne 0xd8>
+";
+	"<CsInsn 0x10f8 : ret >
+<CsInsn 0x10f9 : nop dword ptr [rax]>
+<CsInsn 0x1100 : endbr64 >
+<CsInsn 0x1104 : cmp byte ptr [rip + 0x2f05], \
+0>
+<CsInsn 0x110b : jne 0xd8>
+" -> "<CsInsn 0x110d : push rbp>
+<CsInsn 0x110e : cmp qword ptr [rip + 0x2ee2], 0>
+<CsInsn 0x1116 : mov rbp, rsp>
+<CsInsn 0x1119 : je \
+0xc7>
+";
+	"<CsInsn 0x10f8 : ret >
+<CsInsn 0x10f9 : nop dword ptr [rax]>
+<CsInsn 0x1100 : endbr64 >
+<CsInsn 0x1104 : cmp byte ptr [rip + 0x2f05], \
+0>
+<CsInsn 0x110b : jne 0xd8>
+" -> "<CsInsn 0x1138 : ret >
+<CsInsn 0x1139 : nop dword ptr [rax]>
+<CsInsn 0x1140 : endbr64 >
+<CsInsn 0x1144 : jmp 0x60>
+";
+	"<CsInsn 0x110d : push rbp>
+<CsInsn 0x110e : cmp qword ptr [rip + 0x2ee2], 0>
+<CsInsn 0x1116 : mov rbp, rsp>
+<CsInsn 0x1119 : je \
+0xc7>
+" -> "<CsInsn 0x111b : mov rdi, qword ptr [rip + 0x2ee6]>
+<CsInsn 0x1122 : call 0xffffffffffffffe0>
+";
+	"<CsInsn 0x110d : push rbp>
+<CsInsn 0x110e : cmp qword ptr [rip + 0x2ee2], 0>
+<CsInsn 0x1116 : mov rbp, rsp>
+<CsInsn 0x1119 : je \
+0xc7>
+" -> "<CsInsn 0x1127 : call 0x30>
+<CsInsn 0x112c : mov byte ptr [rip + 0x2edd], 1>
+<CsInsn 0x1133 : pop rbp>
+<CsInsn 0x1134 : ret >
+<CsInsn \
+0x1135 : nop dword ptr [rax]>
+";
+	"<CsInsn 0x111b : mov rdi, qword ptr [rip + 0x2ee6]>
+<CsInsn 0x1122 : call 0xffffffffffffffe0>
+" -> "<CsInsn 0x1127 : call 0x30>
+<CsInsn 0x112c : mov byte ptr [rip + 0x2edd], 1>
+<CsInsn 0x1133 : pop rbp>
+<CsInsn 0x1134 : ret >
+<CsInsn \
+0x1135 : nop dword ptr [rax]>
+";
+	"<CsInsn 0x1127 : call 0x30>
+<CsInsn 0x112c : mov byte ptr [rip + 0x2edd], 1>
+<CsInsn 0x1133 : pop rbp>
+<CsInsn 0x1134 : ret >
+<CsInsn \
+0x1135 : nop dword ptr [rax]>
+" -> "<CsInsn 0x1138 : ret >
+<CsInsn 0x1139 : nop dword ptr [rax]>
+<CsInsn 0x1140 : endbr64 >
+<CsInsn 0x1144 : jmp 0x60>
+";
+	"<CsInsn 0x1138 : ret >
+<CsInsn 0x1139 : nop dword ptr [rax]>
+<CsInsn 0x1140 : endbr64 >
+<CsInsn 0x1144 : jmp 0x60>
+" -> "<CsInsn 0x10c0 : lea rdi, [rip + 0x2f49]>
+<CsInsn 0x10c7 : lea rsi, [rip + 0x2f42]>
+<CsInsn 0x10ce : sub rsi, rdi>
+<CsInsn 0x10d1 : \
+mov rax, rsi>
+<CsInsn 0x10d4 : shr rsi, 0x3f>
+<CsInsn 0x10d8 : sar rax, 3>
+<CsInsn 0x10dc : add rsi, rax>
+<CsInsn 0x10df : sar rsi, \
+1>
+<CsInsn 0x10e2 : je 0x98>
+";
+	"<CsInsn 0x1149 : endbr64 >
+<CsInsn 0x114d : push rbp>
+<CsInsn 0x114e : mov rbp, rsp>
+<CsInsn 0x1151 : sub rsp, 0x20>
+<CsInsn 0x1155 : \
+mov dword ptr [rbp - 0x14], edi>
+<CsInsn 0x1158 : mov dword ptr [rbp - 0x18], esi>
+<CsInsn 0x115b : mov dword ptr [rbp - 8], 1>
+<\
+CsInsn 0x1162 : mov dword ptr [rbp - 4], 0>
+<CsInsn 0x1169 : cmp dword ptr [rbp - 0x14], 0>
+<CsInsn 0x116d : je 0x12b>
+" -> "<CsInsn 0x116f : mov eax, dword ptr [rbp - 8]>
+<CsInsn 0x1172 : add eax, 3>
+<CsInsn 0x1175 : mov dword ptr [rbp - 4], eax>
+<CsInsn \
+0x1178 : cmp dword ptr [rbp - 0x18], 0>
+<CsInsn 0x117c : jne 0x12b>
+";
+	"<CsInsn 0x1149 : endbr64 >
+<CsInsn 0x114d : push rbp>
+<CsInsn 0x114e : mov rbp, rsp>
+<CsInsn 0x1151 : sub rsp, 0x20>
+<CsInsn 0x1155 : \
+mov dword ptr [rbp - 0x14], edi>
+<CsInsn 0x1158 : mov dword ptr [rbp - 0x18], esi>
+<CsInsn 0x115b : mov dword ptr [rbp - 8], 1>
+<\
+CsInsn 0x1162 : mov dword ptr [rbp - 4], 0>
+<CsInsn 0x1169 : cmp dword ptr [rbp - 0x14], 0>
+<CsInsn 0x116d : je 0x12b>
+" -> "<CsInsn 0x118b : mov eax, dword ptr [rbp - 8]>
+<CsInsn 0x118e : cmp eax, dword ptr [rbp - 4]>
+<CsInsn 0x1191 : jne 0x152>
+";
+	"<CsInsn 0x116f : mov eax, dword ptr [rbp - 8]>
+<CsInsn 0x1172 : add eax, 3>
+<CsInsn 0x1175 : mov dword ptr [rbp - 4], eax>
+<CsInsn \
+0x1178 : cmp dword ptr [rbp - 0x18], 0>
+<CsInsn 0x117c : jne 0x12b>
+" -> "<CsInsn 0x117e : mov edx, dword ptr [rbp - 0x14]>
+<CsInsn 0x1181 : mov eax, dword ptr [rbp - 0x18]>
+<CsInsn 0x1184 : add eax, edx>
+<\
+CsInsn 0x1186 : add eax, eax>
+<CsInsn 0x1188 : mov dword ptr [rbp - 8], eax>
+";
+	"<CsInsn 0x116f : mov eax, dword ptr [rbp - 8]>
+<CsInsn 0x1172 : add eax, 3>
+<CsInsn 0x1175 : mov dword ptr [rbp - 4], eax>
+<CsInsn \
+0x1178 : cmp dword ptr [rbp - 0x18], 0>
+<CsInsn 0x117c : jne 0x12b>
+" -> "<CsInsn 0x118b : mov eax, dword ptr [rbp - 8]>
+<CsInsn 0x118e : cmp eax, dword ptr [rbp - 4]>
+<CsInsn 0x1191 : jne 0x152>
+";
+	"<CsInsn 0x117e : mov edx, dword ptr [rbp - 0x14]>
+<CsInsn 0x1181 : mov eax, dword ptr [rbp - 0x18]>
+<CsInsn 0x1184 : add eax, edx>
+<\
+CsInsn 0x1186 : add eax, eax>
+<CsInsn 0x1188 : mov dword ptr [rbp - 8], eax>
+" -> "<CsInsn 0x118b : mov eax, dword ptr [rbp - 8]>
+<CsInsn 0x118e : cmp eax, dword ptr [rbp - 4]>
+<CsInsn 0x1191 : jne 0x152>
+";
+	"<CsInsn 0x118b : mov eax, dword ptr [rbp - 8]>
+<CsInsn 0x118e : cmp eax, dword ptr [rbp - 4]>
+<CsInsn 0x1191 : jne 0x152>
+" -> "<CsInsn 0x1193 : lea rcx, [rip + 0xe6a]>
+<CsInsn 0x119a : mov edx, 0x10>
+<CsInsn 0x119f : lea rsi, [rip + 0xe71]>
+<CsInsn 0x11a6 : \
+lea rdi, [rip + 0xe74]>
+<CsInsn 0x11ad : call 0xfffffffffffffff0>
+";
+	"<CsInsn 0x118b : mov eax, dword ptr [rbp - 8]>
+<CsInsn 0x118e : cmp eax, dword ptr [rbp - 4]>
+<CsInsn 0x1191 : jne 0x152>
+" -> "<CsInsn 0x11b2 : nop >
+<CsInsn 0x11b3 : leave >
+<CsInsn 0x11b4 : ret >
+<CsInsn 0x11b5 : endbr64 >
+<CsInsn 0x11b9 : push rbp>
+<CsInsn \
+0x11ba : mov rbp, rsp>
+<CsInsn 0x11bd : mov esi, 0>
+<CsInsn 0x11c2 : mov edi, 2>
+<CsInsn 0x11c7 : call 0xe9>
+<CsInsn 0x11cc : mov \
+eax, 0>
+<CsInsn 0x11d1 : pop rbp>
+<CsInsn 0x11d2 : ret >
+<CsInsn 0x11d3 : nop word ptr cs:[rax + rax]>
+<CsInsn 0x11dd : nop dword \
+ptr [rax]>
+<CsInsn 0x11e0 : endbr64 >
+<CsInsn 0x11e4 : push r15>
+<CsInsn 0x11e6 : lea r15, [rip + 0x2bcb]>
+<CsInsn 0x11ed : push \
+r14>
+<CsInsn 0x11ef : mov r14, rdx>
+<CsInsn 0x11f2 : push r13>
+<CsInsn 0x11f4 : mov r13, rsi>
+<CsInsn 0x11f7 : push r12>
+<CsInsn \
+0x11f9 : mov r12d, edi>
+<CsInsn 0x11fc : push rbp>
+<CsInsn 0x11fd : lea rbp, [rip + 0x2bbc]>
+<CsInsn 0x1204 : push rbx>
+<CsInsn \
+0x1205 : sub rbp, r15>
+<CsInsn 0x1208 : sub rsp, 8>
+<CsInsn 0x120c : call 0xffffffffffffffa0>
+<CsInsn 0x1211 : sar rbp, 3>
+<CsInsn \
+0x1215 : je 0x1d6>
+";
+	"<CsInsn 0x1193 : lea rcx, [rip + 0xe6a]>
+<CsInsn 0x119a : mov edx, 0x10>
+<CsInsn 0x119f : lea rsi, [rip + 0xe71]>
+<CsInsn 0x11a6 : \
+lea rdi, [rip + 0xe74]>
+<CsInsn 0x11ad : call 0xfffffffffffffff0>
+" -> "<CsInsn 0x11b2 : nop >
+<CsInsn 0x11b3 : leave >
+<CsInsn 0x11b4 : ret >
+<CsInsn 0x11b5 : endbr64 >
+<CsInsn 0x11b9 : push rbp>
+<CsInsn \
+0x11ba : mov rbp, rsp>
+<CsInsn 0x11bd : mov esi, 0>
+<CsInsn 0x11c2 : mov edi, 2>
+<CsInsn 0x11c7 : call 0xe9>
+<CsInsn 0x11cc : mov \
+eax, 0>
+<CsInsn 0x11d1 : pop rbp>
+<CsInsn 0x11d2 : ret >
+<CsInsn 0x11d3 : nop word ptr cs:[rax + rax]>
+<CsInsn 0x11dd : nop dword \
+ptr [rax]>
+<CsInsn 0x11e0 : endbr64 >
+<CsInsn 0x11e4 : push r15>
+<CsInsn 0x11e6 : lea r15, [rip + 0x2bcb]>
+<CsInsn 0x11ed : push \
+r14>
+<CsInsn 0x11ef : mov r14, rdx>
+<CsInsn 0x11f2 : push r13>
+<CsInsn 0x11f4 : mov r13, rsi>
+<CsInsn 0x11f7 : push r12>
+<CsInsn \
+0x11f9 : mov r12d, edi>
+<CsInsn 0x11fc : push rbp>
+<CsInsn 0x11fd : lea rbp, [rip + 0x2bbc]>
+<CsInsn 0x1204 : push rbx>
+<CsInsn \
+0x1205 : sub rbp, r15>
+<CsInsn 0x1208 : sub rsp, 8>
+<CsInsn 0x120c : call 0xffffffffffffffa0>
+<CsInsn 0x1211 : sar rbp, 3>
+<CsInsn \
+0x1215 : je 0x1d6>
+";
+	"<CsInsn 0x11b2 : nop >
+<CsInsn 0x11b3 : leave >
+<CsInsn 0x11b4 : ret >
+<CsInsn 0x11b5 : endbr64 >
+<CsInsn 0x11b9 : push rbp>
+<CsInsn \
+0x11ba : mov rbp, rsp>
+<CsInsn 0x11bd : mov esi, 0>
+<CsInsn 0x11c2 : mov edi, 2>
+<CsInsn 0x11c7 : call 0xe9>
+<CsInsn 0x11cc : mov \
+eax, 0>
+<CsInsn 0x11d1 : pop rbp>
+<CsInsn 0x11d2 : ret >
+<CsInsn 0x11d3 : nop word ptr cs:[rax + rax]>
+<CsInsn 0x11dd : nop dword \
+ptr [rax]>
+<CsInsn 0x11e0 : endbr64 >
+<CsInsn 0x11e4 : push r15>
+<CsInsn 0x11e6 : lea r15, [rip + 0x2bcb]>
+<CsInsn 0x11ed : push \
+r14>
+<CsInsn 0x11ef : mov r14, rdx>
+<CsInsn 0x11f2 : push r13>
+<CsInsn 0x11f4 : mov r13, rsi>
+<CsInsn 0x11f7 : push r12>
+<CsInsn \
+0x11f9 : mov r12d, edi>
+<CsInsn 0x11fc : push rbp>
+<CsInsn 0x11fd : lea rbp, [rip + 0x2bbc]>
+<CsInsn 0x1204 : push rbx>
+<CsInsn \
+0x1205 : sub rbp, r15>
+<CsInsn 0x1208 : sub rsp, 8>
+<CsInsn 0x120c : call 0xffffffffffffffa0>
+<CsInsn 0x1211 : sar rbp, 3>
+<CsInsn \
+0x1215 : je 0x1d6>
+" -> "<CsInsn 0x1217 : xor ebx, ebx>
+<CsInsn 0x1219 : nop dword ptr [rax]>
+";
+	"<CsInsn 0x11b2 : nop >
+<CsInsn 0x11b3 : leave >
+<CsInsn 0x11b4 : ret >
+<CsInsn 0x11b5 : endbr64 >
+<CsInsn 0x11b9 : push rbp>
+<CsInsn \
+0x11ba : mov rbp, rsp>
+<CsInsn 0x11bd : mov esi, 0>
+<CsInsn 0x11c2 : mov edi, 2>
+<CsInsn 0x11c7 : call 0xe9>
+<CsInsn 0x11cc : mov \
+eax, 0>
+<CsInsn 0x11d1 : pop rbp>
+<CsInsn 0x11d2 : ret >
+<CsInsn 0x11d3 : nop word ptr cs:[rax + rax]>
+<CsInsn 0x11dd : nop dword \
+ptr [rax]>
+<CsInsn 0x11e0 : endbr64 >
+<CsInsn 0x11e4 : push r15>
+<CsInsn 0x11e6 : lea r15, [rip + 0x2bcb]>
+<CsInsn 0x11ed : push \
+r14>
+<CsInsn 0x11ef : mov r14, rdx>
+<CsInsn 0x11f2 : push r13>
+<CsInsn 0x11f4 : mov r13, rsi>
+<CsInsn 0x11f7 : push r12>
+<CsInsn \
+0x11f9 : mov r12d, edi>
+<CsInsn 0x11fc : push rbp>
+<CsInsn 0x11fd : lea rbp, [rip + 0x2bbc]>
+<CsInsn 0x1204 : push rbx>
+<CsInsn \
+0x1205 : sub rbp, r15>
+<CsInsn 0x1208 : sub rsp, 8>
+<CsInsn 0x120c : call 0xffffffffffffffa0>
+<CsInsn 0x1211 : sar rbp, 3>
+<CsInsn \
+0x1215 : je 0x1d6>
+" -> "<CsInsn 0x1236 : add rsp, 8>
+<CsInsn 0x123a : pop rbx>
+<CsInsn 0x123b : pop rbp>
+<CsInsn 0x123c : pop r12>
+<CsInsn 0x123e : pop \
+r13>
+<CsInsn 0x1240 : pop r14>
+<CsInsn 0x1242 : pop r15>
+<CsInsn 0x1244 : ret >
+<CsInsn 0x1245 : nop word ptr cs:[rax + rax]>
+<CsInsn \
+0x1250 : endbr64 >
+<CsInsn 0x1254 : ret >
+Node NOP: 0x8b
+";
+	"<CsInsn 0x1217 : xor ebx, ebx>
+<CsInsn 0x1219 : nop dword ptr [rax]>
+" -> "<CsInsn 0x1220 : mov rdx, r14>
+<CsInsn 0x1223 : mov rsi, r13>
+<CsInsn 0x1226 : mov edi, r12d>
+<CsInsn 0x1229 : call qword ptr [r15 + \
+rbx*8]>
+<CsInsn 0x122d : add rbx, 1>
+<CsInsn 0x1231 : cmp rbp, rbx>
+<CsInsn 0x1234 : jne 0x1c0>
+";
+	"<CsInsn 0x1220 : mov rdx, r14>
+<CsInsn 0x1223 : mov rsi, r13>
+<CsInsn 0x1226 : mov edi, r12d>
+<CsInsn 0x1229 : call qword ptr [r15 + \
+rbx*8]>
+<CsInsn 0x122d : add rbx, 1>
+<CsInsn 0x1231 : cmp rbp, rbx>
+<CsInsn 0x1234 : jne 0x1c0>
+" -> "<CsInsn 0x1220 : mov rdx, r14>
+<CsInsn 0x1223 : mov rsi, r13>
+<CsInsn 0x1226 : mov edi, r12d>
+<CsInsn 0x1229 : call qword ptr [r15 + \
+rbx*8]>
+<CsInsn 0x122d : add rbx, 1>
+<CsInsn 0x1231 : cmp rbp, rbx>
+<CsInsn 0x1234 : jne 0x1c0>
+";
+	"<CsInsn 0x1220 : mov rdx, r14>
+<CsInsn 0x1223 : mov rsi, r13>
+<CsInsn 0x1226 : mov edi, r12d>
+<CsInsn 0x1229 : call qword ptr [r15 + \
+rbx*8]>
+<CsInsn 0x122d : add rbx, 1>
+<CsInsn 0x1231 : cmp rbp, rbx>
+<CsInsn 0x1234 : jne 0x1c0>
+" -> "<CsInsn 0x1236 : add rsp, 8>
+<CsInsn 0x123a : pop rbx>
+<CsInsn 0x123b : pop rbp>
+<CsInsn 0x123c : pop r12>
+<CsInsn 0x123e : pop \
+r13>
+<CsInsn 0x1240 : pop r14>
+<CsInsn 0x1242 : pop r15>
+<CsInsn 0x1244 : ret >
+<CsInsn 0x1245 : nop word ptr cs:[rax + rax]>
+<CsInsn \
+0x1250 : endbr64 >
+<CsInsn 0x1254 : ret >
+Node NOP: 0x8b
+";
+}
